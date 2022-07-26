@@ -12,23 +12,21 @@ const TipCalculator = () => {
   const [percentage, setPercentage] = React.useState(null);
 
   return (
-    <div className="tip-calculator">
-      <main>
-        <TipCalculatorContext.Provider
-          value={{
-            bill,
-            numberOfPeople,
-            percentage,
-            setBill,
-            setNumberOfPeople,
-            setPercentage,
-          }}
-        >
-          <TipCalculatorInput />
-          <TipCalculatorOutput />
-        </TipCalculatorContext.Provider>
-      </main>
-    </div>
+    <main className="tip-calculator">
+      <TipCalculatorContext.Provider
+        value={{
+          bill,
+          numberOfPeople,
+          percentage,
+          setBill,
+          setNumberOfPeople,
+          setPercentage,
+        }}
+      >
+        <TipCalculatorInput />
+        <TipCalculatorOutput />
+      </TipCalculatorContext.Provider>
+    </main>
   );
 };
 
