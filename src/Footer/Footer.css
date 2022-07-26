@@ -1,0 +1,12 @@
+@import "../variables.css";
+
+.attribution {
+  text-align: center;
+  font-family: var(--font-family-bold);
+}
+
+@media (max-width: 768px) {
+  .attribution {
+    font-size: 0.8em;
+  }
+}
