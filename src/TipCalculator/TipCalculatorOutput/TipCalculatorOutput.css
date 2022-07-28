@@ -1,7 +1,8 @@
 @import "../../variables.css";
 
 .tip-calculator-output {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: var(--very-dark-cyan);
   padding: 2rem 3rem;
   border-radius: 10px;
@@ -31,15 +32,11 @@
 }
 
 .tip-calculator-output-button {
-  position: absolute;
-  display: block;
-  left: 3rem;
-  bottom: 2rem;
-  right: 3rem;
   color: var(--very-dark-cyan);
   background-color: var(--strong-cyan);
   padding: 0.8rem;
   font-size: 1em;
+  margin-top: auto;
 }
 
 .btn-disable {
